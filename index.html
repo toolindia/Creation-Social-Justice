@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Creation Social Justice Welfare Society</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -13,14 +14,14 @@
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
     <!-- Top Contact Bar -->
-    <div class="bg-blue-900 text-white text-xs sm:text-sm py-2 px-4 sm:px-8">
+    <div class="bg-blue-950 text-white text-xs sm:text-sm py-2 px-4 sm:px-8">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div>
-                <span class="text-blue-200">Regd. No.:</span> S-1300/2018 (28/09/2018)
+                <span class="text-blue-300 font-medium">Regd. No.:</span> S-1300/2018 (28/09/2018)
             </div>
-            <div class="flex items-center space-x-4">
+            <div class="flex flex-wrap items-center justify-center gap-4">
                 <span><strong>Phone:</strong> 9212512423, 9354181774</span>
-                <span>|</span>
+                <span class="hidden sm:inline">|</span>
                 <span><strong>Email:</strong> creationsocial.ngo@gmail.com</span>
             </div>
         </div>
@@ -31,13 +32,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="Home.html" class="flex flex-col">
-                    <span class="text-xl font-bold text-blue-700 leading-tight">Creation Social Justice</span>
-                    <span class="text-sm font-semibold text-gray-600">Welfare Society</span>
+                    <span class="text-xl font-bold text-blue-700 tracking-tight leading-tight">Creation Social Justice</span>
+                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Welfare Society</span>
                 </a>
                 <nav class="flex space-x-6">
                     <a href="Home.html" class="text-blue-700 font-semibold border-b-2 border-blue-700 pb-1">Home</a>
                     <a href="About.html" class="text-gray-600 hover:text-blue-700 font-medium transition">About Us</a>
-                    <a href="Organization.html" class="text-gray-600 hover:text-blue-700 font-medium transition">Gallery & Work</a>
+                    <a href="Organization.html" class="text-gray-600 hover:text-blue-700 font-medium transition">Organization & Gallery</a>
                 </nav>
             </div>
         </div>
@@ -45,62 +46,135 @@
 
     <!-- Hero Section -->
     <main class="flex-grow">
-        <section class="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-24 sm:py-32">
+        <section class="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white py-20 sm:py-28">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <span class="bg-blue-700 text-blue-100 text-xs font-semibold uppercase px-3 py-1 rounded-full tracking-wide">
-                    Empowering Communities & Championing Equality
+                <span class="bg-blue-700/80 text-blue-100 text-xs font-semibold uppercase px-4 py-1.5 rounded-full tracking-wider border border-blue-500/30">
+                    Official Portal • North East Delhi
                 </span>
                 <h1 class="mt-6 text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
                     Dedicated to Social Justice & Community Welfare
                 </h1>
-                <p class="mt-6 text-lg sm:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
-                    Working proactively across North East Delhi and surrounding regions to uplift underprivileged communities through welfare drives, legal awareness, and youth development.
+                <p class="mt-6 text-lg sm:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed font-light">
+                    Transforming underprivileged lives through humanitarian aid, legal awareness, healthcare initiatives, and grassroots empowerment.
                 </p>
-                <div class="mt-8 flex justify-center gap-4">
-                    <a href="About.html" class="px-6 py-3 bg-white text-blue-900 rounded-lg font-semibold shadow-md hover:bg-gray-100 transition">Our Mission</a>
-                    <a href="Organization.html" class="px-6 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-600 transition">View Initiatives</a>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="About.html" class="px-6 py-3 bg-white text-blue-900 rounded-lg font-semibold shadow hover:bg-gray-100 transition">
+                        Explore About Page
+                    </a>
+                    <a href="Organization.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-500 transition">
+                        View Organization Portal
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Focus Areas -->
-        <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900">Key Pillars of Action</h2>
-                <p class="text-gray-600 mt-2">Serving humanity with transparent and direct grassroots initiatives.</p>
+        <!-- Quick Access Direct Integration Cards -->
+        <section class="py-12 bg-gray-100 border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- About Module Link Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold uppercase text-blue-600 bg-blue-50 px-2 py-1 rounded">External Source Embed</span>
+                                <span class="text-xs text-gray-400">toolindia.github.io</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mt-3">Official About Portal</h3>
+                            <p class="text-gray-600 text-sm mt-1">Directly view society profile, legal registration verification, and mission directives.</p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-3">
+                            <a href="About.html" class="px-4 py-2 bg-blue-600 text-white text-xs font-semibold rounded hover:bg-blue-700 transition">
+                                Open About Page
+                            </a>
+                            <a href="https://toolindia.github.io/Creation-Social-Justice/about" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-gray-100 text-gray-700 text-xs font-semibold rounded hover:bg-gray-200 transition">
+                                Visit Direct URL &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Organization Module Link Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-bold uppercase text-indigo-600 bg-indigo-50 px-2 py-1 rounded">External Source Embed</span>
+                                <span class="text-xs text-gray-400">toolindia.github.io</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mt-3">Organization Directory & Operations</h3>
+                            <p class="text-gray-600 text-sm mt-1">Access field drives, community programs, operational branches, and our 10-photo archive.</p>
+                        </div>
+                        <div class="mt-6 flex items-center gap-3">
+                            <a href="Organization.html" class="px-4 py-2 bg-indigo-600 text-white text-xs font-semibold rounded hover:bg-indigo-700 transition">
+                                Open Organization Page
+                            </a>
+                            <a href="https://toolindia.github.io/Creation-Social-Justice/org" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-gray-100 text-gray-700 text-xs font-semibold rounded hover:bg-gray-200 transition">
+                                Visit Direct URL &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- Live Embedded About Section directly on Home.html -->
+        <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-blue-600 font-semibold tracking-wider uppercase text-xs">Embedded Information Preview</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mt-1">Creation Social Justice Online Portal</h2>
+                <p class="text-gray-600 text-sm mt-2">Embedded live document directly from the official web repository.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md border border-gray-300 overflow-hidden">
+                <div class="bg-gray-100 px-4 py-3 border-b border-gray-200 flex items-center justify-between text-xs text-gray-600">
+                    <span class="font-mono text-gray-700">Source: https://toolindia.github.io/Creation-Social-Justice/about</span>
+                    <a href="https://toolindia.github.io/Creation-Social-Justice/about" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold hover:underline">
+                        Open in Full Window
+                    </a>
+                </div>
+                <div class="w-full h-[520px]">
+                    <iframe 
+                        src="https://toolindia.github.io/Creation-Social-Justice/about" 
+                        class="w-full h-full border-0" 
+                        title="Creation Social Justice - Embedded About Frame"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Three Core Pillars -->
+        <section class="pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 bg-white rounded-xl border border-gray-200 shadow-sm hover:border-blue-300 transition">
+                <div class="p-8 bg-white rounded-xl border border-gray-200 shadow-sm">
                     <div class="h-10 w-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold mb-4">01</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Social Justice Advocacy</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Promoting human dignity, civil equity, and equal access to essential opportunities for every citizen.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Social Justice</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Protecting individual civil rights, community equality, and free societal arbitration.</p>
                 </div>
-                <div class="p-8 bg-white rounded-xl border border-gray-200 shadow-sm hover:border-blue-300 transition">
+                <div class="p-8 bg-white rounded-xl border border-gray-200 shadow-sm">
                     <div class="h-10 w-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold mb-4">02</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Community Welfare</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Providing essential grassroots support, relief packages, healthcare awareness, and child educational aid.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Relief & Welfare</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Proactive relief distribution, food assistance drives, and emergency aid programs.</p>
                 </div>
-                <div class="p-8 bg-white rounded-xl border border-gray-200 shadow-sm hover:border-blue-300 transition">
+                <div class="p-8 bg-white rounded-xl border border-gray-200 shadow-sm">
                     <div class="h-10 w-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center font-bold mb-4">03</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Skill Building & Empowerment</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Equipping youth and women with foundational vocational skills to ensure financial independence.</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Skill Building</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Providing underprivileged youth and women the tools to achieve long-term financial independence.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-b border-gray-800 pb-8">
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-gray-800 pb-8">
             <div>
-                <h4 class="text-lg font-bold text-white mb-2">Creation Social Justice Welfare Society</h4>
-                <p class="text-sm text-gray-400 max-w-md">
+                <h4 class="text-lg font-bold text-white mb-1">Creation Social Justice Welfare Society</h4>
+                <p class="text-xs text-gray-400">Regd. No. S-1300/2018 (Date: 28/09/2018)</p>
+                <p class="text-sm text-gray-400 mt-3 max-w-md">
                     A-87, Gali No. 5, Durga Puri Chowk, Hardevpuri, Mandoli, North East, Delhi-110093
                 </p>
-                <p class="text-xs text-gray-500 mt-2">Registration No: S-1300/2018</p>
             </div>
             <div class="text-sm md:text-right space-y-1">
-                <p><strong>Contact:</strong> 9212512423, 9354181774</p>
+                <p><strong>Helpline:</strong> 9212512423, 9354181774</p>
                 <p><strong>Email:</strong> creationsocial.ngo@gmail.com</p>
             </div>
         </div>
